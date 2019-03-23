@@ -1,0 +1,100 @@
+---
+---
+
+$black: hsl(0, 0%, 0%);
+$blue: hsl(202, 100%, 37%);
+$green: hsl(116, 46%, 50%);
+$greenDark: hsl(116, 46%, 40%);
+$white: hsl(0, 0%, 100%);
+
+body {
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+}
+
+.container {
+  max-width: 80rem;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+form.signup {
+  margin-bottom: 0.5rem;
+}
+
+.signup button,
+.signup input {
+  height: 5.8rem;
+  padding: .6rem 2rem;
+  font-size: 2rem;
+}
+
+.signup input {
+  background-color: $white;
+  color: $black;
+}
+
+.signup button {
+  border-color: $green;
+  background-color: $green;
+}
+
+.signup button:hover {
+  border-color: $greenDark;
+  background-color: $greenDark;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .signup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup .column,
+  .signup .column.column-40 {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+}

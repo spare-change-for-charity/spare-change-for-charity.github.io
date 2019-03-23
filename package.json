@@ -1,0 +1,23 @@
+{
+  "name": "spare-change-for-charity.github.io",
+  "version": "0.5.0",
+  "description": "Spare - Change for Charity",
+  "main": "index.html",
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "install:bundle": "bundle install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spare-change-for-charity/spare-change-for-charity.github.io.git"
+  },
+  "keywords": [
+    "spare change",
+    "charity",
+    "nonprofit",
+    "501c3"
+  ],
+  "author": "Merlin Patterson",
+  "license": "ISC",
+  "homepage": "https://spare-change-for-charity.github.io"
+}
