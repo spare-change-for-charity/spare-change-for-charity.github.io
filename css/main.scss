@@ -65,6 +65,15 @@ h4 {
   font-size: 1.8rem;
 }
 
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+p {
+  text-align: left;
+}
+
 @media (min-width: 641px) and (max-width: 724px) {
   .signup button,
   .signup input {
