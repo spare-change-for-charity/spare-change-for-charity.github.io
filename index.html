@@ -29,37 +29,24 @@
       With your change, we can change the world
     </h3>
 
-    <!--
-      Replace with this
-      https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
-    -->
-    <form
-      class='row signup'
-      action='https://formspree.io/spare.changeforcharity@gmail.com'
-      method='post'
-    >
-      <div class='column'>
-        <input
-          name='email'
-          placeholder='Enter your email address'
-          type='text'
-        />
-      </div>
-      <div class='column column-40'>
-        <button type='submit'>
-          Change the world
-        </button>
-      </div>
-    </form>
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+       style="display:none;"
+       onload="if(submitted){window.location='http://sparechange.charity/thanks.html';}"
+    ></iframe>
     <form
       class='row signup'
       action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5j4YQoHy0-QjbUHF1Z5yYFS5NLKVt76RZ7zWluomyEJNOjA/formResponse" 
-      target="_self" 
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
       method="POST" 
       id="mG61Hd"
     >
       <div class='column'>
         <input
+          placeholder='Enter your email address'
           type="email"
           class="quantumWizTextinputPaperinputInput exportInput"
           jsname="YPqjbf"
